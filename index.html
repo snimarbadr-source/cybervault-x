@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#030712">
+  <meta name="robots" content="noindex,nofollow">
+  <title>CyberVault X - خزنة أحمد السريّة</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%23030712'/%3E%3Cpath d='M50 18l26 10v20c0 18-11 28-26 34-15-6-26-16-26-34V28z' fill='none' stroke='%2306b6d4' stroke-width='6' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="intro-lock">
+
+<!-- أيقونات SVG داخلية (بدون مكتبات خارجية) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M5 12h14M12 5v14"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-eye-off" viewBox="0 0 24 24"><path d="M9.88 9.88a3 3 0 1 0 4.24 4.24"/><path d="M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 10 7 10 7a13.16 13.16 0 0 1-1.67 2.68"/><path d="M6.61 6.61A13.53 13.53 0 0 0 2 12s3 7 10 7a9.74 9.74 0 0 0 5.39-1.61"/><path d="m2 2 20 20"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></symbol>
+    <symbol id="i-pen" viewBox="0 0 24 24"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></symbol>
+    <symbol id="i-key" viewBox="0 0 24 24"><path d="m21 2-9.6 9.6"/><circle cx="7.5" cy="15.5" r="5.5"/><path d="m15.5 7.5 3 3L22 7l-3-3"/></symbol>
+    <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></symbol>
+    <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></symbol>
+    <symbol id="i-drive" viewBox="0 0 24 24"><path d="M22 12H2"/><path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/><path d="M6 16h.01M10 16h.01"/></symbol>
+    <symbol id="i-warn" viewBox="0 0 24 24"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4M12 17h.01"/></symbol>
+    <symbol id="i-wand" viewBox="0 0 24 24"><path d="m15 4 5 5L8 21l-5-5Z"/><path d="M19 3v4M17 5h4M5 3v2M4 4h2"/></symbol>
+  </defs>
+</svg>
+
+<!-- ===================== المقدمة السينمائية (5 ثوانٍ) ===================== -->
+<div id="intro" aria-hidden="true">
+  <div class="door door-l"><i class="rivets"></i></div>
+  <div class="door door-r"><i class="rivets"></i></div>
+  <div class="seam"></div>
+  <div class="scan"></div>
+  <canvas id="intro-canvas"></canvas>
+
+  <div class="intro-center">
+    <div class="orb">
+      <svg class="ring" viewBox="0 0 160 160">
+        <circle class="ring-bg" cx="80" cy="80" r="72"/>
+        <circle class="ring-fg" id="ring-fg" cx="80" cy="80" r="72"/>
+      </svg>
+      <svg class="shield" viewBox="0 0 24 24">
+        <path pathLength="1" class="sh-line" d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/>
+        <g class="sh-lock"><rect x="9" y="10.5" width="6" height="5" rx="1"/><path d="M10.5 10.5V9a1.5 1.5 0 0 1 3 0v1.5"/></g>
+      </svg>
+      <div class="pct" id="pct">0%</div>
+    </div>
+    <h1 class="intro-title" id="intro-title" dir="ltr">CYBERVAULT X</h1>
+    <p class="intro-status" id="intro-status">[ جاري تشغيل بروتوكول الأمان... ]</p>
+  </div>
+  <div class="flash"></div>
+</div>
+
+<div class="bg-fx" aria-hidden="true"><i></i><i></i></div>
+
+<div id="app">
+  <header class="topbar">
+    <div class="wrap topbar-in">
+      <div class="brand">
+        <div class="logo"><svg class="ic"><use href="#i-shield"/></svg></div>
+        <div>
+          <h1 class="brand-name">خزنة أحمد السريّة</h1>
+          <p class="brand-sub">CYBERVAULT X</p>
+        </div>
+      </div>
+      <button id="status-badge" class="badge badge-local" title="حالة المزامنة">
+        <svg class="ic"><use href="#i-drive"/></svg><span>...</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="wrap main">
+    <nav class="tabs" id="tabs">
+      <button class="tab active" data-tab="vault"><svg class="ic"><use href="#i-lock"/></svg><span>الخزنة</span></button>
+      <button class="tab" data-tab="generator"><svg class="ic"><use href="#i-wand"/></svg><span>مولّد كلمات السر</span></button>
+      <button class="tab" data-tab="settings"><svg class="ic"><use href="#i-key"/></svg><span>الإعدادات والنشر</span></button>
+    </nav>
+
+    <!-- الخزنة -->
+    <section id="view-vault" class="view">
+      <div class="toolbar">
+        <div class="search">
+          <svg class="ic"><use href="#i-search"/></svg>
+          <input id="search" type="search" placeholder="ابحث عن حساب، بريد أو ملاحظة..." autocomplete="off">
+        </div>
+        <button id="btn-add" class="btn btn-primary"><svg class="ic"><use href="#i-plus"/></svg><span>إضافة حساب جديد</span></button>
+      </div>
+      <div id="grid" class="grid"></div>
+    </section>
+
+    <!-- المولّد -->
+    <section id="view-generator" class="view hidden">
+      <div class="panel narrow">
+        <div class="panel-head">
+          <div><h2>مولّد كلمات السر</h2><p>كلمات سر عشوائية قوية باستخدام التشفير الآمن للمتصفح.</p></div>
+          <div class="icon-chip"><svg class="ic"><use href="#i-key"/></svg></div>
+        </div>
+        <div class="gen-out">
+          <input id="gen-out" readonly dir="ltr" value="">
+          <button id="gen-copy" class="btn btn-ghost"><svg class="ic"><use href="#i-copy"/></svg><span>نسخ</span></button>
+        </div>
+        <label class="range-label">الطول: <b id="len-val">20</b> حرف</label>
+        <input id="gen-len" type="range" min="8" max="64" value="20">
+        <div class="checks">
+          <label><input type="checkbox" id="g-up" checked><span>أحرف كبيرة (A-Z)</span></label>
+          <label><input type="checkbox" id="g-low" checked><span>أحرف صغيرة (a-z)</span></label>
+          <label><input type="checkbox" id="g-num" checked><span>أرقام (0-9)</span></label>
+          <label><input type="checkbox" id="g-sym" checked><span>رموز (!@#$%)</span></label>
+        </div>
+        <button id="gen-btn" class="btn btn-primary full"><svg class="ic"><use href="#i-refresh"/></svg><span>توليد كلمة سر جديدة</span></button>
+      </div>
+    </section>
+
+    <!-- الإعدادات -->
+    <section id="view-settings" class="view hidden">
+      <div class="panel">
+        <div class="panel-head">
+          <div><h2>الاتصال والمزامنة</h2><p>اجعل حساباتك تظهر نفسها على أي جهاز.</p></div>
+          <div class="icon-chip"><svg class="ic"><use href="#i-cloud"/></svg></div>
+        </div>
+
+        <div id="status-box" class="note"></div>
+
+        <label class="lbl">رابط الخادم (Vercel) — مطلوب فقط إذا فتحت الموقع من GitHub Pages</label>
+        <input id="set-api" dir="ltr" placeholder="https://my-vault.vercel.app" class="input">
+
+        <label class="lbl">رمز الوصول (اختياري — فقط إذا فعّلت VAULT_KEY في Vercel)</label>
+        <input id="set-key" dir="ltr" type="password" placeholder="اتركه فارغاً إن لم تفعّله" class="input">
+
+        <div class="row-end">
+          <button id="set-save" class="btn btn-primary"><svg class="ic"><use href="#i-check"/></svg><span>حفظ ومزامنة الآن</span></button>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-head"><div><h2>خطوات النشر</h2><p>الملف README.md داخل الـ zip فيه الشرح الكامل.</p></div></div>
+        <ol class="steps">
+          <li><b>GitHub:</b> ارفع كل الملفات إلى مستودع جديد.</li>
+          <li><b>Vercel:</b> Add New → Project → اختر المستودع → Deploy (بدون أي إعدادات).</li>
+          <li><b>قاعدة البيانات:</b> من مشروعك في Vercel → Storage → Create → <b>Upstash Redis</b> (مجاني) → Connect Project، ثم Redeploy.</li>
+          <li><b>اختياري GitHub Pages:</b> Settings → Pages → Branch: main، ثم ضع رابط Vercel في الخانة بالأعلى.</li>
+        </ol>
+        <div class="note warn">
+          <svg class="ic"><use href="#i-warn"/></svg>
+          <div>بدون تسجيل دخول، أي شخص يعرف رابط موقعك يستطيع رؤية حساباتك. احتفظ بالرابط سرياً، أو فعّل <code>VAULT_KEY</code> في Vercel لإضافة رمز وصول يُطلب مرة واحدة لكل جهاز.</div>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+
+<!-- نافذة الإضافة / التعديل -->
+<div id="modal" class="overlay hidden">
+  <div class="dialog">
+    <div class="dialog-head">
+      <h3 id="modal-title">إضافة حساب جديد</h3>
+      <button class="icon-btn" data-close type="button" aria-label="إغلاق"><svg class="ic"><use href="#i-x"/></svg></button>
+    </div>
+    <form id="form" autocomplete="off">
+      <input type="hidden" id="f-id">
+      <label class="lbl">اسم التطبيق / الخدمة</label>
+      <input id="f-title" class="input" required placeholder="مثال: نتفليكس، إنستغرام">
+
+      <label class="lbl">رابط الموقع (يجلب الشعار تلقائياً)</label>
+      <input id="f-url" class="input" dir="ltr" placeholder="google.com">
+      <div class="logo-prev">
+        <div class="logo-box"><img id="f-logo" alt="" hidden><svg class="ic" id="f-logo-ph"><use href="#i-globe"/></svg></div>
+        <span id="f-logo-txt">أدخل رابط الموقع لجلب الشعار تلقائياً</span>
+      </div>
+
+      <div class="two">
+        <div>
+          <label class="lbl">البريد / اسم المستخدم</label>
+          <input id="f-email" class="input" dir="ltr" required placeholder="ahmed@example.com">
+        </div>
+        <div>
+          <label class="lbl lbl-row">كلمة السر <button type="button" id="f-rand" class="link">توليد تلقائي</button></label>
+          <div class="pw-wrap">
+            <input id="f-pass" class="input" type="password" dir="ltr" required placeholder="••••••••••••">
+            <button type="button" id="f-eye" class="icon-btn sm" aria-label="إظهار"><svg class="ic"><use href="#i-eye"/></svg></button>
+          </div>
+        </div>
+      </div>
+
+      <label class="lbl">ملاحظات / رموز الاستعادة</label>
+      <textarea id="f-note" class="input" rows="3" placeholder="أسئلة الأمان، رمز PIN، ملاحظات..."></textarea>
+
+      <div class="row-end">
+        <button type="button" class="btn btn-ghost" data-close>إلغاء</button>
+        <button type="submit" class="btn btn-primary">حفظ الحساب</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- نافذة رمز الوصول (تظهر فقط إذا فُعّل VAULT_KEY) -->
+<div id="key-modal" class="overlay hidden">
+  <div class="dialog small">
+    <div class="dialog-head"><h3>رمز الوصول مطلوب</h3></div>
+    <p class="muted">هذا الخادم محمي برمز وصول. أدخله مرة واحدة وسيُحفظ في هذا الجهاز.</p>
+    <input id="key-input" class="input" dir="ltr" type="password" placeholder="VAULT_KEY">
+    <p id="key-err" class="err hidden">الرمز غير صحيح</p>
+    <div class="row-end"><button id="key-ok" class="btn btn-primary">دخول</button></div>
+  </div>
+</div>
+
+<div id="toast" class="toast"><svg class="ic"><use href="#i-check"/></svg><span id="toast-msg"></span></div>
+
+<script src="config.js"></script>
+<script src="intro.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
